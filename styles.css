@@ -2,7 +2,6 @@ html,
 body {
   height: 100%;
 }
-
 body {
   margin: 0;
   display: grid;
@@ -10,7 +9,6 @@ body {
   font-family: Poppins;
   background: #484450;
 }
-
 button {
   font-family: inherit;
   cursor: pointer;
@@ -21,7 +19,6 @@ button {
   padding: 20px 36px;
   font-size: 16px;
 }
-
 .background {
   position: fixed;
   top: 0;
@@ -34,12 +31,10 @@ button {
   visibility: hidden;
   background: rgba(0, 0, 0, 0.25);
 }
-
 body.open .background {
   visibility: visible;
   opacity: 1;
 }
-
 @keyframes modal-in {
   0% {
     translate: -50% 10%;
@@ -51,13 +46,11 @@ body.open .background {
     visibility: visible;
   }
 }
-
 .page-content,
 .modal,
 .background {
   transition: 0.5s;
 }
-
 .modal {
   position: fixed;
   top: 50%;
@@ -72,23 +65,19 @@ body.open .background {
   opacity: 0;
   visibility: hidden;
 }
-
 body.open > .page-content {
   scale: 0.75;
 }
-
 body.open .modal {
   opacity: 1;
   visibility: visible;
   animation: modal-in 0.5s;
 }
-
 h2 {
   margin: 0 0 8px;
   font-weight: 400;
   font-size: 21px;
 }
-
 p {
   margin: 0;
   color: rgba(255, 255, 255, 0.5);
